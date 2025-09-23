@@ -13,5 +13,11 @@ springdoc:
   default-produces-media-type: application/json
 
 backend:
-  baseUrl: ${BASE_URL:http://localhost:8080}
+  baseUrl: ${BASE_URL:http://localhost:8080/api}
+
+jwt:
+  secret-key: ${SECRET_KEY:bW9kZXJuc3VpdHBlcmhhcHNmaXJlcGxhY2ViYWxhbmNlY2VydGFpbmx5d2hlbnRhaWw=}
+  access-token:
+    expiration: 7776000000 # 3 meses
+
 

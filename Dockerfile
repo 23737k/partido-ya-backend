@@ -8,7 +8,7 @@ WORKDIR layer
 COPY --from=builder build/target/*.jar app.jar
 RUN java -Djarmode=tools -jar app.jar extract --layers --launcher
 
-FROM eclipse-temurin:17.0.4.1_1-jre
+FROM eclipse-temurin:21
 WORKDIR application
 COPY --from=layers layer/app/dependencies/ ./
 COPY --from=layers layer/app/spring-boot-loader/ ./

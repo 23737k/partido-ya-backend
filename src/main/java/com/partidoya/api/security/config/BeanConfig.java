@@ -35,7 +35,8 @@ public class BeanConfig {
             "/swagger-ui/**",
             "/swagger-ui/*",
             "/webjars/**",
-            "/swagger-ui.html"
+            "/swagger-ui.html",
+            "/api/canchas"
         };
     }
 
